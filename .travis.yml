@@ -1,0 +1,27 @@
+# R for travis documentation: https://docs.travis-ci.com/user/languages/r
+
+language: r
+sudo: false
+cache: packages
+
+r: bioc-devel
+
+# Strict checks in place
+warnings_are_errors: false
+
+r_packages:
+  - rmarkdown
+
+bioc_packages:
+  - Biobase
+  - BiocGenerics
+  - DelayedArray
+  - S4Vectors
+  - IRanges
+  - GenomeInfoDb
+  - GenomicRanges
+  - GenomicFeatures
+  - TxDb.Hsapiens.UCSC.hg19.knownGene
+  - BiocStyle
+  - HDF5Array
+
